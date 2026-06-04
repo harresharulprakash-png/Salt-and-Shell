@@ -1,0 +1,470 @@
+/* =====================================================
+   Salt & Shell - Stylesheet
+   Author: University coursework project
+   Notes: Mobile-first-ish responsive design with three
+   breakpoints: mobile (<=640), tablet (<=1280), desktop.
+   ===================================================== */
+
+/* ---------- Reset and base ---------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth; /* fallback if jQuery is blocked */
+}
+
+body {
+    font-family: 'Walter Turncoat', cursive;
+    color: #2b1d14;
+    background: #f3e7d8; /* warm cream */
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ---------- Layout helpers ---------- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.center { text-align: center; }
+.muted  { color: #7a6655; }
+
+/* Small label above a heading */
+.kicker {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+    color: #b4593a;
+    margin-bottom: 12px;
+}
+
+h2 {
+    font-size: 42px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+    color: #2b1d14;
+}
+
+p { margin-bottom: 14px; }
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: #2b1d14;
+    color: #f3e7d8;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.btn:hover {
+    background: #b4593a;
+    transform: translateY(-2px);
+}
+
+/* ---------- Navigation ---------- */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(232, 153, 104, 0.95); /* peach, slightly transparent */
+    backdrop-filter: blur(6px);
+    z-index: 100;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 14px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Caveat', cursive;
+    font-size: 32px;
+    color: #2b1d14;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    padding: 6px 2px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    border-bottom-color: #2b1d14;
+}
+
+/* Hamburger button - hidden on desktop */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+}
+.menu-toggle span {
+    width: 26px;
+    height: 2px;
+    background: #2b1d14;
+    transition: 0.3s ease;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+    padding-top: 140px;
+    padding-bottom: 60px;
+    background: #e89968; /* peach from the sample image */
+    text-align: center;
+    color: #2b1d14;
+}
+
+.hero-tag {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.hero-title {
+    font-family: 'Caveat', cursive;
+    font-size: 130px;
+    line-height: 0.95;
+    margin-bottom: 24px;
+}
+
+.hero-sub {
+    font-size: 17px;
+    max-width: 600px;
+    margin: 0 auto 32px;
+}
+
+.hero-image {
+    max-width: 1100px;
+    margin: 60px auto 0;
+    padding: 0 24px;
+}
+
+.hero-image img {
+    border-radius: 6px;
+    aspect-ratio: 16 / 7;
+    object-fit: cover;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+}
+
+/* ---------- About ---------- */
+.about { background: #f3e7d8; }
+
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.col-img img {
+    border-radius: 6px;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+}
+
+.stats {
+    display: flex;
+    gap: 32px;
+    margin-top: 30px;
+}
+.stats > div {
+    flex: 1;
+    border-top: 1px solid #c9b69e;
+    padding-top: 14px;
+}
+.stats strong {
+    display: block;
+    font-size: 32px;
+    color: #b4593a;
+}
+.stats span {
+    font-size: 13px;
+    color: #7a6655;
+}
+
+/* ---------- Menu ---------- */
+.menu { background: #ead7c0; }
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 30px 0 50px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 1px solid #2b1d14;
+    color: #2b1d14;
+    padding: 10px 22px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+.filter-btn:hover,
+.filter-btn.active {
+    background: #2b1d14;
+    color: #f3e7d8;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.menu-card {
+    background: #f3e7d8;
+    border-radius: 6px;
+    padding: 24px;
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.menu-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.menu-card .info { flex: 1; }
+.menu-card h3 {
+    font-size: 19px;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+.menu-card .price { color: #b4593a; }
+.menu-card .desc {
+    font-size: 14px;
+    color: #7a6655;
+    margin: 0;
+}
+
+.loading { text-align: center; grid-column: 1 / -1; color: #7a6655; }
+
+/* ---------- Gallery ---------- */
+.gallery { background: #f3e7d8; }
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-top: 40px;
+}
+
+.g-item {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.g-item:hover {
+    transform: scale(1.02);
+    filter: brightness(1.05);
+}
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.9);
+    z-index: 200;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.lightbox.open { display: flex; }
+.lightbox img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 4px;
+}
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* ---------- Contact ---------- */
+.contact { background: #e89968; }
+
+.info {
+    list-style: none;
+    margin-top: 24px;
+}
+.info li {
+    padding: 14px 0;
+    border-top: 1px solid rgba(43, 29, 20, 0.2);
+    font-size: 15px;
+}
+.info strong {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    color: #2b1d14;
+}
+
+#contactForm {
+    background: #f3e7d8;
+    padding: 36px;
+    border-radius: 6px;
+}
+#contactForm label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin: 16px 0 6px;
+}
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #c9b69e;
+    background: #fff;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 14px;
+}
+#contactForm input:focus,
+#contactForm textarea:focus {
+    outline: none;
+    border-color: #b4593a;
+}
+#contactForm .btn { margin-top: 22px; width: 100%; }
+
+.form-msg {
+    margin-top: 14px;
+    color: #2b6e3a;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background: #2b1d14;
+    color: #f3e7d8;
+    text-align: center;
+    padding: 28px 20px;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+/* =====================================================
+   RESPONSIVE BREAKPOINTS
+   The assignment asks for three target sizes:
+   - Desktop  1920 x 1080
+   - Tablet   1280 x 800
+   - Mobile    640 x 800
+   ===================================================== */
+
+/* Tablet: <= 1280px */
+@media (max-width: 1280px) {
+    .hero-title { font-size: 100px; }
+    .section { padding: 80px 0; }
+    h2 { font-size: 36px; }
+
+    .two-col { gap: 50px; }
+
+    .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Mobile: <= 640px */
+@media (max-width: 640px) {
+    /* Show hamburger, hide the link list until toggled */
+    .menu-toggle { display: flex; }
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #e89968;
+        flex-direction: column;
+        gap: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+    .nav-links.open { max-height: 400px; }
+    .nav-links li { border-top: 1px solid rgba(43, 29, 20, 0.1); }
+    .nav-links a {
+        display: block;
+        padding: 16px 24px;
+        border-bottom: none;
+    }
+
+    /* Stack everything */
+    .two-col { grid-template-columns: 1fr; gap: 40px; }
+    .menu-grid { grid-template-columns: 1fr; }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+
+    /* Smaller type */
+    .hero { padding-top: 110px; }
+    .hero-title { font-size: 72px; }
+    .hero-sub  { font-size: 15px; }
+    h2 { font-size: 28px; }
+    .section { padding: 60px 0; }
+
+    .stats { flex-direction: column; gap: 16px; }
+
+    #contactForm { padding: 24px; }
+}

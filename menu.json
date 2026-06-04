@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Crispy Calamari",
+        "price": "LKR 1,400",
+        "desc": "Lightly battered squid rings with lemon and a herbed tartare dip.",
+        "category": "starter"
+    },
+    {
+        "name": "Garlic Prawns",
+        "price": "LKR 1,800",
+        "desc": "Tiger prawns sautéed in butter, garlic, chilli and parsley.",
+        "category": "starter"
+    },
+    {
+        "name": "Seafood Bruschetta",
+        "price": "LKR 1,200",
+        "desc": "Toasted sourdough, smoked mackerel pâté and pickled onions.",
+        "category": "starter"
+    },
+    {
+        "name": "Grilled Whole Snapper",
+        "price": "LKR 3,200",
+        "desc": "Whole snapper grilled over wood, served with roasted tomato salsa.",
+        "category": "main"
+    },
+    {
+        "name": "Mediterranean Seafood Pasta",
+        "price": "LKR 2,600",
+        "desc": "Linguine with prawns, mussels and clams in a white wine sauce.",
+        "category": "main"
+    },
+    {
+        "name": "Tuna Steak",
+        "price": "LKR 2,900",
+        "desc": "Seared yellowfin tuna, olive tapenade and warm potato salad.",
+        "category": "main"
+    },
+    {
+        "name": "Coconut Fish Curry",
+        "price": "LKR 2,200",
+        "desc": "A Sri Lankan classic, slow-cooked with coconut milk and curry leaves.",
+        "category": "main"
+    },
+    {
+        "name": "House Lemonade",
+        "price": "LKR 550",
+        "desc": "Fresh lime, mint and a touch of cane sugar over crushed ice.",
+        "category": "drink"
+    },
+    {
+        "name": "Iced Coffee",
+        "price": "LKR 650",
+        "desc": "Cold-brew espresso, milk and a hint of vanilla.",
+        "category": "drink"
+    },
+    {
+        "name": "Coastal Cooler",
+        "price": "LKR 750",
+        "desc": "Watermelon, basil and sparkling water. Our summer favourite.",
+        "category": "drink"
+    }
+]
