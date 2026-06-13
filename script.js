@@ -53,9 +53,9 @@ $(function () {
         });
     });
 
-    // ---------- AJAX: load menu items from data/menu.json ----------
+    // ---------- AJAX: load menu items from menu.json ----------
     // Using $.getJSON which is a jQuery AJAX helper.
-    $.getJSON('data/menu.json')
+    $.getJSON('menu.json')
         .done(function (items) {
             renderMenu(items);
         })
@@ -89,6 +89,7 @@ $(function () {
         visible.forEach(function (item) {
             var card = $(
                 '<div class="menu-card">' +
+                    '<img class="menu-img" src="' + item.image + '" alt="' + item.name + '">' +
                     '<div class="info">' +
                         '<h3><span>' + item.name + '</span>' +
                         '<span class="price">' + item.price + '</span></h3>' +

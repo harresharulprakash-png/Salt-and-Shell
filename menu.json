@@ -3,60 +3,70 @@
         "name": "Crispy Calamari",
         "price": "LKR 1,400",
         "desc": "Lightly battered squid rings with lemon and a herbed tartare dip.",
-        "category": "starter"
+        "category": "starter",
+        "image": "menu/crispy-calamari.jpg"
     },
     {
         "name": "Garlic Prawns",
         "price": "LKR 1,800",
         "desc": "Tiger prawns sautéed in butter, garlic, chilli and parsley.",
-        "category": "starter"
+        "category": "starter",
+        "image": "menu/garlic-prawns.jpg"
     },
     {
         "name": "Seafood Bruschetta",
         "price": "LKR 1,200",
         "desc": "Toasted sourdough, smoked mackerel pâté and pickled onions.",
-        "category": "starter"
+        "category": "starter",
+        "image": "menu/seafood-bruschetta.jpg"
     },
     {
         "name": "Grilled Whole Snapper",
         "price": "LKR 3,200",
         "desc": "Whole snapper grilled over wood, served with roasted tomato salsa.",
-        "category": "main"
+        "category": "main",
+        "image": "menu/grilled-whole-snapper.jpg"
     },
     {
         "name": "Mediterranean Seafood Pasta",
         "price": "LKR 2,600",
         "desc": "Linguine with prawns, mussels and clams in a white wine sauce.",
-        "category": "main"
+        "category": "main",
+        "image": "DSC00128.jpg"
     },
     {
         "name": "Tuna Steak",
         "price": "LKR 2,900",
         "desc": "Seared yellowfin tuna, olive tapenade and warm potato salad.",
-        "category": "main"
+        "category": "main",
+        "image": "DSC00268.jpg"
     },
     {
         "name": "Coconut Fish Curry",
         "price": "LKR 2,200",
         "desc": "A Sri Lankan classic, slow-cooked with coconut milk and curry leaves.",
-        "category": "main"
+        "category": "main",
+        "image": "DSC00048.jpg"
     },
     {
         "name": "House Lemonade",
         "price": "LKR 550",
         "desc": "Fresh lime, mint and a touch of cane sugar over crushed ice.",
-        "category": "drink"
+        "category": "drink",
+        "image": "menu/house-lemonade.jpg"
     },
     {
         "name": "Iced Coffee",
         "price": "LKR 650",
         "desc": "Cold-brew espresso, milk and a hint of vanilla.",
-        "category": "drink"
+        "category": "drink",
+        "image": "menu/iced-coffee.jpg"
     },
     {
         "name": "Coastal Cooler",
         "price": "LKR 750",
         "desc": "Watermelon, basil and sparkling water. Our summer favourite.",
-        "category": "drink"
+        "category": "drink",
+        "image": "DSC00255.jpg"
     }
 ]

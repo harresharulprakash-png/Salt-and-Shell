@@ -278,6 +278,14 @@ p { margin-bottom: 14px; }
     box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
+.menu-img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
 .menu-card .info { flex: 1; }
 .menu-card h3 {
     font-size: 19px;
